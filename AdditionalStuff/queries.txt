@@ -1,0 +1,8 @@
+SELECT '{location: new google.maps.LatLng(' || lat.latitude ||',' ||long.longitude || '), weight:' || count(*) || '},'
+from raw_data as raw
+join dropoff_latitude as lat on lat.id = raw.dropoff_latitude
+join dropoff_longitude as long on long.id = raw.dropoff_longitude
+GROUP BY lat.Id, long.id
+ORDER BY COUNT(*) DESC
+
+
