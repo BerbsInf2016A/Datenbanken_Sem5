@@ -12,3 +12,14 @@ SELECT payment_type, COUNT(*) , SUM(trip_total) as sum_trip_total, AVG(trip_tota
 SUM(tips) as sum_tips, AVG(tips) as avg_tips, SUM(fare) as  sum_fare, AVG(fare) as avg_fare
 FROM raw_data
 GROUP BY payment_type
+
+-- Taxi statistics
+SELECT taxi_id, COUNT(*) , SUM(trip_total) as sum_trip_total, AVG(trip_total) as avg_trip_total, SUM(trip_miles), AVG(trip_miles)
+from raw_data
+GROUP BY taxi_id
+ORDER BY COUNT(*) DESC
+-- Company statistics
+SELECT company, COUNT(*) , SUM(trip_total) as sum_trip_total, AVG(trip_total) as avg_trip_total, SUM(trip_miles), AVG(trip_miles)
+from raw_data
+GROUP BY company
+ORDER BY COUNT(*) DESC
