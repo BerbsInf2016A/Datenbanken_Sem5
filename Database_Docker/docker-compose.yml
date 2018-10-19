@@ -45,5 +45,6 @@ services:
   dss:
     image: dataiku/dss
     container_name: dss
+    restart: always
     ports:
       - 10000:10000
