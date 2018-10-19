@@ -42,3 +42,8 @@ services:
       PICKUP_LONGITUDE_TABLE_NAME: pickup_longitude
       DROPOFF_LATITUDE_TABLE_NAME: dropoff_latitude
       DROPOFF_LONGITUDE_TABLE_NAME: dropoff_longitude
+  dss:
+    image: dataiku/dss
+    container_name: dss
+    ports:
+      - 10000:10000
