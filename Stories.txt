@@ -14,3 +14,9 @@ raw_data_extended_locations (André)
 	- Rest weg
 
 Bis Freitag 26.10 erledigt
+
+-----------------
+Bis Montag:
+Adi: Visualisierung
+André: Map erstellen
+Robert: Holt auf + Visualisierung
