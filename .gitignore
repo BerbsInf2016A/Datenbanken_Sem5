@@ -9,7 +9,7 @@ __pycache__/
 
 # CSV Data
 *.csv
-*.zip
+
 
 # Distribution / packaging
 .Python
